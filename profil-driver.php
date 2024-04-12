@@ -128,7 +128,7 @@ require ('./backend/profilAction.php')
 
                                         <div class="tab-pane fade pt-3" id="profile-settings">
 
-                                            <?php if (!empty($traficError = "Pas de trafic")) { ?>
+                                            <?php if (isset($traficError)) { ?>
 
                                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                                 <?= $traficError ?>
